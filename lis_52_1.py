@@ -28,6 +28,7 @@ class Perceptron(object):
     def predict(self, X):
         return np.where(self.net_input(X) >= 0.0, 1, -1)
     
+
 perceptron = Perceptron()
 X = np.array([[2, 3, 4], [5, 6, 7], [5, 5, 6]])
 y = np.array([1, 2, 2])
